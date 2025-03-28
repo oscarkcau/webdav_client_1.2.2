@@ -248,10 +248,10 @@ class WdDio with DioMixin implements Dio {
     CancelToken? cancelToken,
   }) async {
     // fix auth error
-    var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
-    if (pResp.statusCode != 200) {
-      throw newResponseError(pResp);
-    }
+    //var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
+    //if (pResp.statusCode != 200) {
+    //  throw newResponseError(pResp);
+    //}
 
     var resp = await this.req(
       self,
@@ -290,10 +290,10 @@ class WdDio with DioMixin implements Dio {
     CancelToken? cancelToken,
   }) async {
     // fix auth error
-    var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
-    if (pResp.statusCode != 200) {
-      throw newResponseError(pResp);
-    }
+    //var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
+    //if (pResp.statusCode != 200) {
+    //  throw newResponseError(pResp);
+    //}
 
     Response<ResponseBody> resp;
 
@@ -456,13 +456,13 @@ class WdDio with DioMixin implements Dio {
     CancelToken? cancelToken,
   }) async {
     // fix auth error
-    var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
-    if (pResp.statusCode != 200) {
-      throw newResponseError(pResp);
-    }
+    //var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
+    //if (pResp.statusCode != 200) {
+    //  throw newResponseError(pResp);
+    //}
 
     // mkdir
-    await this._createParent(self, path, cancelToken: cancelToken);
+    //await this._createParent(self, path, cancelToken: cancelToken);
 
     var resp = await this.req(
       self,
@@ -491,13 +491,13 @@ class WdDio with DioMixin implements Dio {
     CancelToken? cancelToken,
   }) async {
     // fix auth error
-    var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
-    if (pResp.statusCode != 200) {
-      throw newResponseError(pResp);
-    }
+    //var pResp = await this.wdOptions(self, path, cancelToken: cancelToken);
+    //if (pResp.statusCode != 200) {
+    //  throw newResponseError(pResp);
+    //}
 
     // mkdir
-    await this._createParent(self, path, cancelToken: cancelToken);
+    //await this._createParent(self, path, cancelToken: cancelToken);
 
     var resp = await this.req(
       self,
