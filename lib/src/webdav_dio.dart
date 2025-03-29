@@ -78,6 +78,11 @@ class WdDio with DioMixin implements Dio {
       options.headers?['authorization'] = str;
     }
 
+    // set content-type for uploading
+    if (method == 'PUT') {
+      options.contentType = Headers.multipartFormDataContentType;
+    }
+
     var resp = await this.requestUri<T>(
       Uri.parse(
           '${path.startsWith(RegExp(r'(http|https)://')) ? path : join(self.uri, path)}'),
